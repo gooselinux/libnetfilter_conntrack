@@ -1,0 +1,25 @@
+diff --git a/include/libnetfilter_conntrack/libnetfilter_conntrack.h b/include/libnetfilter_conntrack/libnetfilter_conntrack.h
+index a043f91..6c142a7 100644
+--- a/include/libnetfilter_conntrack/libnetfilter_conntrack.h
++++ b/include/libnetfilter_conntrack/libnetfilter_conntrack.h
+@@ -9,7 +9,7 @@
+ #define _LIBNETFILTER_CONNTRACK_H_
+ 
+ #include <netinet/in.h>
+-#include <libnfnetlink/linux_nfnetlink.h>
++#include <linux/netfilter/nfnetlink.h>
+ #include <libnfnetlink/libnfnetlink.h>
+ #include <libnetfilter_conntrack/linux_nfnetlink_conntrack.h> 
+ 
+diff --git a/include/libnetfilter_conntrack/linux_nfnetlink_conntrack.h b/include/libnetfilter_conntrack/linux_nfnetlink_conntrack.h
+index 3b2d869..97ec29c 100644
+--- a/include/libnetfilter_conntrack/linux_nfnetlink_conntrack.h
++++ b/include/libnetfilter_conntrack/linux_nfnetlink_conntrack.h
+@@ -1,6 +1,6 @@
+ #ifndef _IPCONNTRACK_NETLINK_H
+ #define _IPCONNTRACK_NETLINK_H
+-#include <libnfnetlink/linux_nfnetlink.h>
++#include <linux/netfilter/nfnetlink.h>
+ 
+ #ifdef __cplusplus
+ extern "C" {
